@@ -35,14 +35,15 @@ h1 {
 }
 
 h2 {
-	font-family: "Open Sans";
 	font-size: 1.1em;
 	text-align: center;
 	padding-bottom: 40px;
 	background-color: rgba(255,255,255,0.5);
 }
 
-
+h3 {
+	text-align: center;
+}
 
 .subhead {
 	font-weight: bold;
@@ -100,4 +101,57 @@ a {
 
 a:hover{
 	text-decoration: underline;
+}
+
+
+/*media queries*/
+@media screen and (max-width: 600px) {
+	#hero{
+		width: 100%;
+	}
+
+	h1{
+		font-size: 3em;
+	}
+
+	h2{
+		width: 70%;
+		margin: 1em auto 0 auto;
+		font-size: 0.85em;
+	}
+
+	.story{
+		font-size: 0.85em;
+		width: 80%;
+	}
+
+	.people, .legend {
+		display: block;
+		width: 30%;
+		color: #bbb;
+		font-size: .7em;
+		line-height: 1em;
+		display: block;
+		font-family: sans-serif;
+	}
+	
+	.right{
+		margin-right: 0;
+		margin-left: 5%;
+		float: right;
+		padding: 0 1.5em 0 1.5em;
+		border-left: 3px solid #b095d1;
+	}
+
+	.left {
+		float: left;
+		text-align: right;
+		margin-right: 5%;
+		margin-left: 0%;
+		padding-right: 1.3em;
+		border-right: 3px solid #b095d1;
+	}
+
+
+
 }
